@@ -1,9 +1,50 @@
 .topHeader {
-    position: absolute;
-    z-index: auto;
+    position: relative;
+    z-index: 1;
     top: 0;
     left: 0;
     background-color: #409EFF;
     width: 100%;
     height: 50px;
+}
+
+.Container {
+    width: 100%;
+    height: calc(100%+80px);
+    background-color: #ececec;
+    box-sizing: border-box;
+
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+
+}
+
+.content_row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 50%;
+    list-style: none;
+}
+
+.squre {
+    margin: 0 0 20px 0.5%;
+    width: 150px;
+    height: 150px;
+    background-color: red;
+}
+
+.C {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 200px;
+    height: 100%;
+    background-color: aquamarine;
 }

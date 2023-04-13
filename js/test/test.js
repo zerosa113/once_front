@@ -11,7 +11,7 @@ $(document).ready(function () {
     }
 
     let triangle = ""
-    for (i = 1; i < 5; i++) {
+    for (i = 1; i < 10; i++) {
         for (j = 0; j < i; j++) {
             triangle += "*"
         }
@@ -21,6 +21,7 @@ $(document).ready(function () {
     $('.triangle').append(`
         ${triangle}
     `)
+
 
     let triangle2 = "";
     for (let i = 0; i <= 10; i++) {
@@ -40,5 +41,22 @@ $(document).ready(function () {
     $('.triangle2').append(`
         ${triangle2}
     `)
+
+
+    let triangle3 = "";
+    for (let i = 0; i <= 5; i++) {
+        let space = "";
+        for (let j = 1; j <= 5 - i; j++) {
+
+            space += " ";
+        }
+        let star = "";
+        for (let k = 1; k <= 2 * i - 1; k++) {
+
+            star += "*";
+        }
+        triangle3 += space + star + "\n";
+    }
+    console.log(triangle3);
 
 })
